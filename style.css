@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     background: url('./robot.gif');
     background-size: contain;
-    background-position: left center;
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
@@ -25,7 +25,7 @@ button {
     outline: none;
     width: 200px;
     height: 50px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     color: white;
     background-color: lightseagreen;
@@ -45,6 +45,25 @@ button:active {
 button:disabled {
     cursor: default;
     filter: brightness(30%);
+}
+
+#joke-container {
+    margin: 15px;
+    padding: 5px;
+    width: 350px;
+    min-height: 500px;
+    background-color: rgba(200, 200, 200, 0.7);
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+#joke-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #050505;
+    text-align: center;
 }
 
 @media screen and (max-width: 1000px) {
